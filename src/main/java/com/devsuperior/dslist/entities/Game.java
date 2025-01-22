@@ -10,16 +10,23 @@ import java.util.Objects;
 @Table(name = "tb_game")
 public class Game {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String title;
     private Integer gameYears;
     private String genre;
     private String platforms;
     private Double score;
     private String imgUrl;
+
+    @Column(columnDefinition = "TEXT")
     private String shortDescription;
+
+    @Column(columnDefinition = "TEXT")
     private String longDescription;
+
+
 
     /**
      * Construtores
@@ -27,12 +34,17 @@ public class Game {
     public Game() {
 
     }
-    public Game(Long id, String title, Integer years, String genre, String platforms, Double score, String imgUrl,
+
+    public Game(Long id, String title,
+                Integer gameYears,
+                String genre,
+                String platforms, Double score,
+                String imgUrl,
                 String shortDescription,
                 String longDescription) {
         this.id = id;
         this.title = title;
-        this.gameYears = years;
+        this.gameYears = gameYears;
         this.genre = genre;
         this.platforms = platforms;
         this.score = score;
