@@ -1,8 +1,6 @@
 package com.devsuperior.dslist.entities;
 
 import jakarta.persistence.*;
-
-
 import java.util.Objects;
 
 
@@ -32,7 +30,6 @@ public class Game {
      * Construtores
      */
     public Game() {
-
     }
 
     public Game(Long id, String title,
