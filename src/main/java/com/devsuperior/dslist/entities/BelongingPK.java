@@ -5,6 +5,7 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
 import java.util.Objects;
+
 //Classe auxiliar para "unificar" dois atributos
 @Embeddable
 public class BelongingPK {

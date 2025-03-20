@@ -1,6 +1,7 @@
 package com.devsuperior.dslist.entities;
 
 import jakarta.persistence.*;
+
 import java.util.Objects;
 
 
@@ -22,8 +23,6 @@ public class Game {
 
     @Column(columnDefinition = "TEXT")
     private String longDescription;
-
-
 
     /**
      * Construtores

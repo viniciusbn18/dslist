@@ -13,14 +13,11 @@ import java.util.Optional;
 @Service
 public class GameListService {
 
-    private GameListRepository gameListRepository;
+    private final GameListRepository gameListRepository;
 
     @Autowired
     public GameListService(GameListRepository gameListRepository) {
         this.gameListRepository = gameListRepository;
-    }
-
-    public GameListService() {
     }
 
     /**

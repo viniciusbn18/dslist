@@ -26,8 +26,9 @@ public class GameService {
 
     /**
      * Método para buscar todos os jogos da lista
+     *
      * @return retorna uma lista com todos os jogos
-     * */
+     */
     @Transactional(readOnly = true)
     public List<GameMinDTO> findAll() {
         List<Game> result = gameRepository.findAll();
@@ -36,16 +37,19 @@ public class GameService {
 
     /**
      * Método para buscar por Id
+     *
      * @param id id do jogo a ser buscado
      * @return retorna um game a lista
      */
     @Transactional(readOnly = true)
     public Optional<GameDTO> findById(Long id) {
-     return gameRepository.findById(id).map(game -> new GameDTO(game));
+        return gameRepository.findById(id).map(game -> new GameDTO(game));
     }
 
-
-
+    public List<GameMinDTO> findByList(Long listId) {
+        return gameRepository.searchByList(listId).stream()
+                .map(item -> new GameMinDTO(item)).collect(Collectors.toList());
+    }
 
 
 }
