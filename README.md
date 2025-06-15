@@ -9,3 +9,4 @@ A aplicação consiste em uma **API REST** para gerenciamento de uma lista de jo
 - Banco de Dados H2 (ambiente de teste)
 - PostgreSQL (ambiente de produção)
 - Maven
+- Docker
