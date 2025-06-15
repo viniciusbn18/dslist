@@ -1,6 +1,6 @@
 # DSList - API REST para Listagem de Jogos
 Este projeto foi desenvolvido durante o **Intensivão Java Spring**, ministrado pelo professor **Nélio Alves** da [DevSuperior](https://devsuperior.com.br).  
-A aplicação consiste em uma **API REST** para gerenciamento de uma lista de jogos, permitindo operações como listagem, detalhamento e reordenação de jogos.
+A aplicação consiste em uma **API REST** para gerenciamento de uma lista de jogos, permitindo operações como listagem, detalhamento e reordenação de jogos. O objetivo é colocar a mão no código e ter contato com essa arquitetura.
 ## Tecnologias Utilizadas
 
 - Java 21
